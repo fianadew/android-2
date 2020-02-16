@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FFF8DC"
+        android:paddingTop="10dp"
+        android:text="KALKULATOR SCIENTIC"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/angka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="50dp"
+        android:hint="ANGKA"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/jum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/angka"
+        android:layout_marginTop="20dp"
+        android:text="0.0"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/logaritma"
+        style="@style/ThemeOverlay.AppCompat.Dialog.Alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jum"
+        android:layout_margin="30dp"
+        android:text="LOGARITMA" />
+
+    <Button
+        android:id="@+id/sin"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/logaritma"
+        android:layout_margin="20dp"
+        android:layout_marginLeft="10dp"
+        android:padding="5dp"
+        android:text="SIN" />
+
+    <Button
+        android:id="@+id/cos"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/logaritma"
+        android:layout_margin="20dp"
+        android:layout_toRightOf="@id/sin"
+        android:text="COS" />
+
+    <Button
+        android:id="@+id/tan"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/logaritma"
+        android:layout_margin="20dp"
+        android:layout_toRightOf="@id/cos"
+        android:text="TAN" />
+
+    <Button
+        android:id="@+id/sec"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/sin"
+        android:layout_margin="20dp"
+        android:text="SECAN" />
+
+    <Button
+        android:id="@+id/cosecan"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/cos"
+        android:layout_margin="20dp"
+        android:layout_toRightOf="@id/sin"
+        android:text="COSEC" />
+
+    <Button
+        android:id="@+id/cotan"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/tan"
+        android:layout_margin="20dp"
+        android:layout_toRightOf="@id/cosecan"
+        android:text="COTAN" />
+
+</RelativeLayout>
